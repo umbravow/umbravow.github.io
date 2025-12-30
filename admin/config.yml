@@ -2,7 +2,7 @@ backend:
   name: github
   repo: umbravow/umbravow.github.io
   branch: main
-  base_url: https://umbravow.umbravow.workers.dev
+  base_url: https://decap-proxy.umbravow.workers.dev
   auth_endpoint: auth
 
 media_folder: "assets/uploads"
