@@ -3,7 +3,7 @@ backend:
   repo: umbravow/umbravow.github.io
   branch: main
   base_url: https://decap-proxy.umbravow.workers.dev
-  auth_endpoint: auth
+  auth_endpoint: auth?provider=github
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
