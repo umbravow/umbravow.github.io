@@ -2,7 +2,7 @@ backend:
   name: github
   repo: umbravow/umbravow.github.io
   branch: main
-  base_url: https://<你的worker子域名>
+  base_url: https://umbravow.umbravow.workers.dev
   auth_endpoint: auth
 
 media_folder: "assets/uploads"
