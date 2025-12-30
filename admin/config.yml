@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: umbravow/umbravow.github.io
+  branch: main
+  base_url: https://<你的worker子域名>
+  auth_endpoint: auth
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "文章"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "开启评论", name: "comments", widget: "boolean", default: false, required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "页面"
+    files:
+      - label: "关于"
+        name: "about"
+        file: "about.md"
+        fields:
+          - { label: "标题", name: "title", widget: "string", default: "About" }
+          - { label: "正文", name: "body", widget: "markdown" }
