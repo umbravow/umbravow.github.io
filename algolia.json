@@ -1,0 +1,13 @@
+[
+  {
+    "objectID": "3b2c2c37960da06252e7d998fbbf5bb720c6737e",
+    "permalink": "/post/updates/",
+    "title": "更新日志","content": "\r2026-01-06\r启用 Goldmark 的 unsafe 模式 [markup.goldmark.renderer] unsafe = true ⚠️避免所有的style=\u0026quot;\u0026hellip;\u0026quot; 都会被 Hugo 自动删掉。\n改变字体大小前面没有#符号，并且还可以设置字体颜色。效果如下：\n这是一段普通文字\n**这段文字稍大 **\n这段文字是 18 像素，还可以加颜色！\r用 rem 单位更响应式\n","date": "2026-01-08 01:00:37",
+    "updated": "2026-01-08 01:00:37"
+  }, 
+  {
+    "objectID": "9c14f50884ec9df838540af659546471a018ffae",
+    "permalink": "/post/helloworld/",
+    "title": "Hello world","content": " Hello World\r","date": "2026-01-08 01:00:00",
+    "updated": "2026-01-08 01:00:00"
+  }]

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on NothingToSay</title>
+    <link>https://example.org/post/</link>
+    <description>Recent content from NothingToSay</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    
+    <managingEditor>Umbravow@gmail.com (Umbravow)</managingEditor>
+    <webMaster>Umbravow@gmail.com (Umbravow)</webMaster>
+    
+    <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
+    
+    <lastBuildDate>Thu, 08 Jan 2026 01:00:37 +0800</lastBuildDate>
+    
+    
+    <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>更新日志</title>
+      <link>https://example.org/post/updates/</link>
+      <pubDate>Thu, 08 Jan 2026 01:00:37 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>https://example.org/post/updates/</guid>
+      <description>
+        <![CDATA[<h1>更新日志</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <h1 id="2026-01-06">
+<a class="header-anchor" href="#2026-01-06"></a>
+2026-01-06
+</h1><ul>
+<li>
+<p style="font-size: 1.2rem;"> <strong>启用 Goldmark 的 unsafe 模式</strong> </p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="p">[</span><span class="n">markup</span><span class="p">.</span><span class="n">goldmark</span><span class="p">.</span><span class="n">renderer</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">unsafe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div><blockquote>
+<p>⚠️避免所有的style=&quot;&hellip;&quot; 都会被 Hugo 自动删掉。</p>
+</blockquote>
+<ul>
+<li><strong><p style="font-size: 1.2rem;"> 改变字体大小前面没有#符号，并且还可以设置字体颜色。效果如下：</p>
+        
+        <hr><p>本文2026-01-08首发于<a href='https://example.org/'>NothingToSay</a>，最后修改于2026-01-08</p>]]>
+      </description>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Hello world</title>
+      <link>https://example.org/post/helloworld/</link>
+      <pubDate>Thu, 08 Jan 2026 01:00:00 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>https://example.org/post/helloworld/</guid>
+      <description>
+        <![CDATA[<h1>Hello world</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <blockquote>
+<h1 id="hello-world">
+<a class="header-anchor" href="#hello-world"></a>
+<strong>Hello World</strong>
+</h1></blockquote>
+        
+        <hr><p>本文2026-01-08首发于<a href='https://example.org/'>NothingToSay</a>，最后修改于2026-01-08</p>]]>
+      </description>
+      
+    </item>
+    
+  </channel>
+</rss>

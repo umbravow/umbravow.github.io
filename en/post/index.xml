@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>“archives” on NothingToSay</title>
+    <link>https://example.org/en/post/</link>
+    <description>Recent content from NothingToSay</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    
+    <managingEditor>Umbravow@gmail.com (Umbravow)</managingEditor>
+    <webMaster>Umbravow@gmail.com (Umbravow)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Thu, 08 Jan 2026 01:00:00 +0800</lastBuildDate>
+    
+    
+    <atom:link href="https://example.org/en/post/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Hello world</title>
+      <link>https://example.org/en/post/helloworld/</link>
+      <pubDate>Thu, 08 Jan 2026 01:00:00 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>https://example.org/en/post/helloworld/</guid>
+      <description>
+        <![CDATA[<h1>Hello world</h1><p>Author: Umbravow(Umbravow@gmail.com)</p>
+        
+          <blockquote>
+<h1 id="hello-world">
+<a class="header-anchor" href="#hello-world"></a>
+<strong>Hello World</strong>
+</h1></blockquote>
+        
+        <hr><p>Published on 2026-01-08 at <a href='https://example.org/'>NothingToSay</a>, last modified on 2026-01-08</p>]]>
+      </description>
+      
+    </item>
+    
+  </channel>
+</rss>
