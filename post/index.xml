@@ -12,7 +12,7 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Thu, 08 Jan 2026 01:00:37 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 00:29:03 +0800</lastBuildDate>
     
     
     <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss&#43;xml" />
@@ -22,11 +22,37 @@
     
 
     <item>
+      <title>本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile</title>
+      <link>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</link>
+      <pubDate>Sun, 11 Jan 2026 00:29:03 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</guid>
+      <description>
+        <![CDATA[<h1>本地部署Ollama+Qwen3vl-pro+openwebui+Modelfile</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <h3 id="如何本地部署自己的ai模型消费级显卡并通过modelfile文件调试让本地ai模型更适合自己使用">
+<a class="header-anchor" href="#%e5%a6%82%e4%bd%95%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2%e8%87%aa%e5%b7%b1%e7%9a%84ai%e6%a8%a1%e5%9e%8b%e6%b6%88%e8%b4%b9%e7%ba%a7%e6%98%be%e5%8d%a1%e5%b9%b6%e9%80%9a%e8%bf%87modelfile%e6%96%87%e4%bb%b6%e8%b0%83%e8%af%95%e8%ae%a9%e6%9c%ac%e5%9c%b0ai%e6%a8%a1%e5%9e%8b%e6%9b%b4%e9%80%82%e5%90%88%e8%87%aa%e5%b7%b1%e4%bd%bf%e7%94%a8"></a>
+如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。
+</h3><hr>
+<h4 id="安装ollama">
+<a class="header-anchor" href="#%e5%ae%89%e8%a3%85ollama"></a>
+安装Ollama
+</h4><p>官网地址： <a href="https://ollama.com/">https://ollama.com/</a></p>
+<p>默认安装，安装完成后在设置里根据你的配置设置下面2个参数：</p>
+        
+        <hr><p>本文2026-01-11首发于<a href='https://example.org/'>NothingToSay</a>，最后修改于2026-01-11</p>]]>
+      </description>
+      
+    </item>
+    
+    
+
+    <item>
       <title>更新日志</title>
-      <link>https://example.org/post/updates/</link>
+      <link>https://example.org/post/update/updates/</link>
       <pubDate>Thu, 08 Jan 2026 01:00:37 &#43;0800</pubDate>
       <author>Umbravow@gmail.com (Umbravow)</author>
-      <guid>https://example.org/post/updates/</guid>
+      <guid>https://example.org/post/update/updates/</guid>
       <description>
         <![CDATA[<h1>更新日志</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
         
@@ -55,10 +81,10 @@
 
     <item>
       <title>Hello world</title>
-      <link>https://example.org/post/helloworld/</link>
+      <link>https://example.org/post/helloworld/helloworld/</link>
       <pubDate>Thu, 08 Jan 2026 01:00:00 &#43;0800</pubDate>
       <author>Umbravow@gmail.com (Umbravow)</author>
-      <guid>https://example.org/post/helloworld/</guid>
+      <guid>https://example.org/post/helloworld/helloworld/</guid>
       <description>
         <![CDATA[<h1>Hello world</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
         

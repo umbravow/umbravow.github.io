@@ -146,7 +146,7 @@ This article does not have a corresponding language version
 
         selectOptions.forEach((item) => {
           item.addEventListener("click", () => {
-            const langMap = {};langMap['zh-cn'] = '\/post\/helloworld\/';selectedLang.textContent = item.textContent;
+            const langMap = {};selectedLang.textContent = item.textContent;
             selectItems.classList.remove("show");
             selectOptions.forEach((option) => {
               option.classList.remove("selected");

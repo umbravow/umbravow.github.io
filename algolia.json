@@ -1,13 +1,19 @@
 [
   {
-    "objectID": "3b2c2c37960da06252e7d998fbbf5bb720c6737e",
-    "permalink": "/post/updates/",
+    "objectID": "90ca4369a8092528229261fb1773e3d9442fcf11",
+    "permalink": "/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama+qwen3vl-pro+openwebui/",
+    "title": "本地部署Ollama+Qwen3vl-pro+openwebui+Modelfile","content": "\r如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。\r安装Ollama\r官网地址： https://ollama.com/\n默认安装，安装完成后在设置里根据你的配置设置下面2个参数：\nModel Loaction ：模型存储路径\nContext Length ：上下文长度\n#查看模型列表 ollama list #下载并运行qwen3-vl:8b 模型 ollama run qwen3-vl:8b #删除模型 ollama rm qwen3-vl:8b Modelfile\r新建一个TXT文件，如文件名：qwen3vl-modelfile.txt。把下面TEXT里面的内容直接复制进去然后保存。\nFROM qwen3-vl:8b SYSTEM \u0026amp;#34;\u0026amp;#34;\u0026amp;#34; 你是一位技术扎实、表达自然的安全专家。用户可能发送文字、代码、终端截图、网络流量图或 Web 界面等内容。 请始终以连贯的段落回答，避免使用编号、项目符号或分段标题。看到图像时，先准确描述其中可见的关键信息，如命令输出、URL 参数或服务版本；如果图像模糊或信息不足，请直接说明无法可靠判断。 在分析问题时，尽量讲清从现象到原理、再到风险和建议的完整逻辑链。例如，当讨论漏洞时，可以解释其成因、影响范围，并提供验证或修复思路。 对于涉及密码恢复、漏洞利用等敏感操作，优先推荐合法且高效的替代方案（如通过路由器管理界面查看密码、使用 netsh 导出已保存的 WiFi 凭据）。只有在用户明确处于授权测试环境中，才提供进一步的技术路径，并自然提醒注意合规边界。 绝不生成用于未授权攻击、绕过法律限制或造成系统/人身危害的内容。除此之外，知识深度完全开放：可深入讨论协议细节（如 WPA2 四次握手）、二进制逆向、云安全配置、CTF 解题技巧等。 你的风格应像一位经验丰富的同事在白板前讲解：专业、流畅、有重点、有分寸。 \u0026amp;#34;\u0026amp;#34;\u0026amp;#34; PARAMETER temperature 0.72 PARAMETER top_p 0.93 PARAMETER repeat_penalty 1.08 PARAMETER num_ctx 32768 PARAMETER mirostat 2 PARAMETER mirostat_tau 5.5 …","date": "2026-01-11 00:29:03",
+    "updated": "2026-01-11 00:29:03"
+  }, 
+  {
+    "objectID": "a020c13d730f1e7600024aed260af7d4002943eb",
+    "permalink": "/post/update/updates/",
     "title": "更新日志","content": "\r2026-01-06\r启用 Goldmark 的 unsafe 模式 [markup.goldmark.renderer] unsafe = true ⚠️避免所有的style=\u0026quot;\u0026hellip;\u0026quot; 都会被 Hugo 自动删掉。\n改变字体大小前面没有#符号，并且还可以设置字体颜色。效果如下：\n这是一段普通文字\n**这段文字稍大 **\n这段文字是 18 像素，还可以加颜色！\r用 rem 单位更响应式\n","date": "2026-01-08 01:00:37",
     "updated": "2026-01-08 01:00:37"
   }, 
   {
-    "objectID": "9c14f50884ec9df838540af659546471a018ffae",
-    "permalink": "/post/helloworld/",
+    "objectID": "80c98113560fe6e93b1af0396be398230013f8c3",
+    "permalink": "/post/helloworld/helloworld/",
     "title": "Hello world","content": " Hello World\r","date": "2026-01-08 01:00:00",
     "updated": "2026-01-08 01:00:00"
   }]

@@ -8,7 +8,7 @@
   name="viewport"
   content="width=device-width, initial-scale=1, shrink-to-fit=no"
 /><title>
-  更新日志 | Umbravow
+  本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile | Umbravow
 </title>
 <meta name="description" content="少女祈祷中..."/><script>
   window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://example.org/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"i18n_languages\":[{\"Lang\":\"zh-cn\",\"LanguageName\":\"简体中文\",\"LanguageCode\":\"\",\"Title\":\"\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
@@ -33,12 +33,12 @@
     type="font/woff2"
     crossorigin="anonymous"
   /><link rel="stylesheet" href="/css/loader.min.ac746e154f756f8220326eeb52a719f142ab038be5a8ddf30ea5ef15ef2356ea.css" /><meta property="og:type" content="website" />
-  <meta property="og:title" content="更新日志 | Umbravow" />
+  <meta property="og:title" content="本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile | Umbravow" />
   <meta
     property="og:description"
     content="少女祈祷中..."
   />
-  <meta property="og:url" content="https://example.org/post/updates/" />
+  <meta property="og:url" content="https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/" />
   <meta
     property="og:site_name"
     content="NothingToSay"
@@ -48,8 +48,8 @@
     content="/"
   />
   <meta property="article:author" content="Umbravow" />
-  <meta property="article:published_time" content="2026-01-08T01:00:37&#43;08:00" />
-  <meta property="article:modified_time" content="2026-01-08T01:00:37&#43;08:00" /><meta name="twitter:card" content="summary" />
+  <meta property="article:published_time" content="2026-01-11T00:29:03&#43;08:00" />
+  <meta property="article:modified_time" content="2026-01-11T00:29:03&#43;08:00" /><meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="/" />
 <link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.3373a27c76ac75a18d0e67012268a91c24ee50c7836c6a06ca0391225e024374.css" /><link
     rel="preload"
@@ -174,9 +174,9 @@
         });
       </script>
     </nav></div>
-<header id="header" aria-label="Site header"><picture></picture><img  fetchpriority="high" src="/images/banner.webp" alt="更新日志"><div id="header-outer">
+<header id="header" aria-label="Site header"><picture></picture><img  fetchpriority="high" src="/images/banner.webp" alt="本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile"><div id="header-outer">
     <div id="header-title"><span id="logo">
-            <h1 data-aos="slide-up">更新日志</h1>
+            <h1 data-aos="slide-up">本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile</h1>
           </span><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
   </div>
 </header><div id="content"
@@ -188,7 +188,15 @@
       data-aos="fade-up"
     ><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class">
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#如何本地部署自己的ai模型消费级显卡并通过modelfile文件调试让本地ai模型更适合自己使用">如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div></div>
           <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img
@@ -202,7 +210,7 @@
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
-    <div>文章</div><div class="sidebar-state-number">2</div>
+    <div>文章</div><div class="sidebar-state-number">3</div>
   </div>
   <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
     <div>分类</div>
@@ -274,36 +282,89 @@
     class="article-date-link icon-calendar"
     data-aos="zoom-in"
   >
-    <time datetime="2026-01-08 01:00:37 &#43;0800 CST" itemprop="datePublished"
-      >2026-01-08</time
+    <time datetime="2026-01-11 00:29:03 &#43;0800 CST" itemprop="datePublished"
+      >2026-01-11</time
     >
     <time style="display: none;" id="post-update-time"
-      >2026-01-08</time
+      >2026-01-11</time
     >
   </span></div>
-</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="2026-01-06">
-<a class="header-anchor" href="#2026-01-06"></a>
-2026-01-06
-</h1><ul>
-<li>
-<p style="font-size: 1.2rem;"> <strong>启用 Goldmark 的 unsafe 模式</strong> </p>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="p">[</span><span class="n">markup</span><span class="p">.</span><span class="n">goldmark</span><span class="p">.</span><span class="n">renderer</span><span class="p">]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="k">unsafe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span></code></pre></div><blockquote>
-<p>⚠️避免所有的style=&quot;&hellip;&quot; 都会被 Hugo 自动删掉。</p>
-</blockquote>
-<ul>
-<li><strong><p style="font-size: 1.2rem;"> 改变字体大小前面没有#符号，并且还可以设置字体颜色。效果如下：</p></strong></li>
-</ul>
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h3 id="如何本地部署自己的ai模型消费级显卡并通过modelfile文件调试让本地ai模型更适合自己使用">
+<a class="header-anchor" href="#%e5%a6%82%e4%bd%95%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2%e8%87%aa%e5%b7%b1%e7%9a%84ai%e6%a8%a1%e5%9e%8b%e6%b6%88%e8%b4%b9%e7%ba%a7%e6%98%be%e5%8d%a1%e5%b9%b6%e9%80%9a%e8%bf%87modelfile%e6%96%87%e4%bb%b6%e8%b0%83%e8%af%95%e8%ae%a9%e6%9c%ac%e5%9c%b0ai%e6%a8%a1%e5%9e%8b%e6%9b%b4%e9%80%82%e5%90%88%e8%87%aa%e5%b7%b1%e4%bd%bf%e7%94%a8"></a>
+如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。
+</h3><hr>
+<h4 id="安装ollama">
+<a class="header-anchor" href="#%e5%ae%89%e8%a3%85ollama"></a>
+安装Ollama
+</h4><p>官网地址： <a href="https://ollama.com/">https://ollama.com/</a></p>
+<p>默认安装，安装完成后在设置里根据你的配置设置下面2个参数：</p>
 <blockquote>
-<p>这是一段普通文字<br>
-**<span style="font-size: 1.2em;">这段文字稍大</span> **</p>
-<div style="font-size: 18px; color: #1709e4ff;">
-这段文字是 18 像素，还可以加颜色！
-</div>
-<p style="font-size: 1.5rem;">用 rem 单位更响应式</p>
+<p>Model Loaction ：模型存储路径</p>
+</blockquote>
+<blockquote>
+<p>Context Length ：上下文长度</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">#查看模型列表
+</span></span><span class="line"><span class="cl">ollama list
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#下载并运行qwen3-vl:8b 模型
+</span></span><span class="line"><span class="cl">ollama run qwen3-vl:8b 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#删除模型
+</span></span><span class="line"><span class="cl">ollama rm qwen3-vl:8b 
+</span></span></code></pre></div><hr>
+<h4 id="modelfile">
+<a class="header-anchor" href="#modelfile"></a>
+Modelfile
+</h4><p>新建一个TXT文件，如文件名：qwen3vl-modelfile.txt。把下面TEXT里面的内容直接复制进去然后保存。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-TexT" data-lang="TexT"><span class="line"><span class="cl">FROM qwen3-vl:8b
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">SYSTEM &#34;&#34;&#34;
+</span></span><span class="line"><span class="cl">你是一位技术扎实、表达自然的安全专家。用户可能发送文字、代码、终端截图、网络流量图或 Web 界面等内容。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请始终以连贯的段落回答，避免使用编号、项目符号或分段标题。看到图像时，先准确描述其中可见的关键信息，如命令输出、URL 参数或服务版本；如果图像模糊或信息不足，请直接说明无法可靠判断。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">在分析问题时，尽量讲清从现象到原理、再到风险和建议的完整逻辑链。例如，当讨论漏洞时，可以解释其成因、影响范围，并提供验证或修复思路。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">对于涉及密码恢复、漏洞利用等敏感操作，优先推荐合法且高效的替代方案（如通过路由器管理界面查看密码、使用 netsh 导出已保存的 WiFi 凭据）。只有在用户明确处于授权测试环境中，才提供进一步的技术路径，并自然提醒注意合规边界。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">绝不生成用于未授权攻击、绕过法律限制或造成系统/人身危害的内容。除此之外，知识深度完全开放：可深入讨论协议细节（如 WPA2 四次握手）、二进制逆向、云安全配置、CTF 解题技巧等。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">你的风格应像一位经验丰富的同事在白板前讲解：专业、流畅、有重点、有分寸。
+</span></span><span class="line"><span class="cl">&#34;&#34;&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PARAMETER temperature 0.72
+</span></span><span class="line"><span class="cl">PARAMETER top_p 0.93
+</span></span><span class="line"><span class="cl">PARAMETER repeat_penalty 1.08
+</span></span><span class="line"><span class="cl">PARAMETER num_ctx 32768
+</span></span><span class="line"><span class="cl">PARAMETER mirostat 2
+</span></span><span class="line"><span class="cl">PARAMETER mirostat_tau 5.5
+</span></span><span class="line"><span class="cl">PARAMETER stop &#34;&lt;|im_end|&gt;&#34;
+</span></span></code></pre></div><p>在文件当前目录下右键空白处，选择在终端中打开,输入下面命令。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">ollama create qwen3vl-pro -f .\qwen3vl-modelfile.txt
+</span></span></code></pre></div><p>看到提示 success,表示成功。</p>
+<p>然后输入前面教的 ollama lsit，就能看到你创建的名为qwen3vl-pro的AI模型了。</p>
+<blockquote>
+<p>以这个modelfile文件调教的AI模型，询问关于渗透方面的问题，不会直接拒绝你，会告诉你在授权合法的环境中如何操作。
+你可以自定义modelfile文件，让AI模型更贴切你自己的需求。AI伴侣也可以这么调教出来。</p>
+</blockquote>
+<hr>
+<h4 id="安装open-web-ui">
+<a class="header-anchor" href="#%e5%ae%89%e8%a3%85open-web-ui"></a>
+安装Open Web UI
+</h4><blockquote>
+<p>安装这个的目的是可以在内网环境下share你自定义调教的AI模型。使用场景企业内部、学校寝室局域网等等。</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="nb">open</span><span class="o">-</span><span class="n">webui</span> 
+</span></span></code></pre></div><p>一段代码就搞定了。前提是需安装python环境。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">#启动Open Web UI，指定端口3000
+</span></span><span class="line"><span class="cl">open-webui serve    --port 3000
+</span></span></code></pre></div><p>然后在浏览器中输入： http://127.0.0.1:3000，即可打开。端口可任意指定，不指定的话默认是8000。</p>
+<blockquote>
+<p><strong>PS</strong>：
+官方推荐用docker安装，我不想在windows上折腾这个。就用python安装了。<br>
+python也推荐用虚拟环境来安装，可以避免弄坏你当前的python的配置环境。感兴趣可以查下python venv。<br>
+缺点：CMD那个窗口需要一直保持，不能关闭。可以隐藏CMD窗口以服务形式启动，感兴趣可以查下这方面资料。</p>
 </blockquote>
 </div>
     <footer class="article-footer"><ul class="article-category-list"></ul>
@@ -314,17 +375,17 @@
     aria-label="Article navigation"
     data-aos="fade-up"
   ><div class="article-nav-link-wrap left"><img
-              data-src="https://d-sketon.top/img/_backwebp/bg13.webp"
+              data-src="https://d-sketon.top/img/_backwebp/bg5.webp"
               data-sizes="auto"
-              alt="Hello world"
+              alt="更新日志"
               class="lazyload"
             /><a
-          href="/post/helloworld/"
-          aria-label="前一篇:Hello world"
-          title="前一篇:Hello world"
+          href="/post/update/updates/"
+          aria-label="前一篇:更新日志"
+          title="前一篇:更新日志"
         ></a>
         <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">Hello world</h3>
+        <h3 class="article-nav-title">更新日志</h3>
       </div></nav></article></section>
         </div><footer id="footer" aria-label="Site footer">
   <div style="width: 100%; overflow: hidden">
@@ -334,10 +395,10 @@
       <span class="icon-copyright"></span>2026<span class="footer-info-sep rotate"></span>Umbravow
     </div><div>
         <span class="icon-brush"
-          >&nbsp;128</span
+          >&nbsp;1.3k</span
         >
         &nbsp;|&nbsp;
-        <span class="icon-coffee">&nbsp;00:02</span>
+        <span class="icon-coffee">&nbsp;00:05</span>
       </div><div>
         <span class="icon-eye"></span>
         <span id="busuanzi_container_site_pv"
@@ -361,7 +422,15 @@
       </div><nav id="mobile-nav" aria-label="Mobile navigation">
   <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class">
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#如何本地部署自己的ai模型消费级显卡并通过modelfile文件调试让本地ai模型更适合自己使用">如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div></div>
         <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img
@@ -375,7 +444,7 @@
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
-    <div>文章</div><div class="sidebar-state-number">2</div>
+    <div>文章</div><div class="sidebar-state-number">3</div>
   </div>
   <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
     <div>分类</div>
@@ -481,9 +550,9 @@
   <div><script data-pjax>
         window.REIMU_POST = {
           author: "Umbravow",
-          title: "更新日志",
-          url: "https:\/\/example.org\/post\/updates\/",
-          description: "\r2026-01-06\r启用 Goldmark 的 unsafe 模式 [markup.goldmark.renderer] unsafe = true ⚠️避免所有的style=\u0026quot;\u0026hellip;\u0026quot; 都会被 Hugo 自动删掉。\n改变字体大小前面没有#符号，并且还可以设置字体颜色。效果如下：\n",
+          title: "本地部署Ollama\u002bQwen3vl-pro\u002bopenwebui\u002bModelfile",
+          url: "https:\/\/example.org\/post\/2026-01-11-ollama-qwen3vl-pro-openwebui\/ollama\u002bqwen3vl-pro\u002bopenwebui\/",
+          description: "\r如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。\r安装Ollama\r官网地址： https:\/\/ollama.com\/\n默认安装，安装完成后在设置里根据你的配置设置下面2个参数：\n",
           cover: "https:\/\/example.org\/images\/banner.webp",
         };
       </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax ></script><script src="/js/tabs.js" integrity="" crossorigin="anonymous" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
