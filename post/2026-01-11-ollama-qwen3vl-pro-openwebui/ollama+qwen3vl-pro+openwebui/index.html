@@ -195,6 +195,9 @@
         <li><a href="#如何本地部署自己的ai模型消费级显卡并通过modelfile文件调试让本地ai模型更适合自己使用">如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。</a></li>
       </ul>
     </li>
+    <li><a href="#安装ollama">安装Ollama</a></li>
+    <li><a href="#modelfile">Modelfile</a></li>
+    <li><a href="#安装open-web-ui">安装Open Web UI</a></li>
   </ul>
 </nav>
 </div></div>
@@ -293,17 +296,18 @@
 <a class="header-anchor" href="#%e5%a6%82%e4%bd%95%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2%e8%87%aa%e5%b7%b1%e7%9a%84ai%e6%a8%a1%e5%9e%8b%e6%b6%88%e8%b4%b9%e7%ba%a7%e6%98%be%e5%8d%a1%e5%b9%b6%e9%80%9a%e8%bf%87modelfile%e6%96%87%e4%bb%b6%e8%b0%83%e8%af%95%e8%ae%a9%e6%9c%ac%e5%9c%b0ai%e6%a8%a1%e5%9e%8b%e6%9b%b4%e9%80%82%e5%90%88%e8%87%aa%e5%b7%b1%e4%bd%bf%e7%94%a8"></a>
 如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。
 </h3><hr>
-<h4 id="安装ollama">
+<h2 id="安装ollama">
 <a class="header-anchor" href="#%e5%ae%89%e8%a3%85ollama"></a>
 安装Ollama
-</h4><p>官网地址： <a href="https://ollama.com/">https://ollama.com/</a></p>
-<p>默认安装，安装完成后在设置里根据你的配置设置下面2个参数：</p>
+</h2><p>官网地址： <a href="https://ollama.com/">https://ollama.com/</a></p>
+<p>1,默认安装，安装完成后在设置里根据你电脑配置设置下面2个参数：</p>
 <blockquote>
 <p>Model Loaction ：模型存储路径</p>
 </blockquote>
 <blockquote>
 <p>Context Length ：上下文长度</p>
 </blockquote>
+<p>2，ollama run 命令安装你所需的模型。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">#查看模型列表
 </span></span><span class="line"><span class="cl">ollama list
 </span></span><span class="line"><span class="cl">
@@ -313,10 +317,10 @@
 </span></span><span class="line"><span class="cl">#删除模型
 </span></span><span class="line"><span class="cl">ollama rm qwen3-vl:8b 
 </span></span></code></pre></div><hr>
-<h4 id="modelfile">
+<h2 id="modelfile">
 <a class="header-anchor" href="#modelfile"></a>
 Modelfile
-</h4><p>新建一个TXT文件，如文件名：qwen3vl-modelfile.txt。把下面TEXT里面的内容直接复制进去然后保存。</p>
+</h2><p>1，新建一个TXT文件，如文件名：qwen3vl-modelfile.txt。把下面TEXT里面的内容直接复制进去然后保存。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-TexT" data-lang="TexT"><span class="line"><span class="cl">FROM qwen3-vl:8b
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">SYSTEM &#34;&#34;&#34;
@@ -340,26 +344,33 @@ Modelfile
 </span></span><span class="line"><span class="cl">PARAMETER mirostat 2
 </span></span><span class="line"><span class="cl">PARAMETER mirostat_tau 5.5
 </span></span><span class="line"><span class="cl">PARAMETER stop &#34;&lt;|im_end|&gt;&#34;
-</span></span></code></pre></div><p>在文件当前目录下右键空白处，选择在终端中打开,输入下面命令。</p>
+</span></span></code></pre></div><p>2，在文件当前目录下右键空白处，选择在终端中打开,输入下面命令。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">ollama create qwen3vl-pro -f .\qwen3vl-modelfile.txt
-</span></span></code></pre></div><p>看到提示 success,表示成功。</p>
+</span></span></code></pre></div><ul>
+<li>
+<p>看到提示 success,表示成功。</p>
+</li>
+<li>
 <p>然后输入前面教的 ollama lsit，就能看到你创建的名为qwen3vl-pro的AI模型了。</p>
+</li>
+</ul>
 <blockquote>
 <p>以这个modelfile文件调教的AI模型，询问关于渗透方面的问题，不会直接拒绝你，会告诉你在授权合法的环境中如何操作。
 你可以自定义modelfile文件，让AI模型更贴切你自己的需求。AI伴侣也可以这么调教出来。</p>
 </blockquote>
 <hr>
-<h4 id="安装open-web-ui">
+<h2 id="安装open-web-ui">
 <a class="header-anchor" href="#%e5%ae%89%e8%a3%85open-web-ui"></a>
 安装Open Web UI
-</h4><blockquote>
-<p>安装这个的目的是可以在内网环境下share你自定义调教的AI模型。使用场景企业内部、学校寝室局域网等等。</p>
+</h2><blockquote>
+<p>安装这个的目的是可以在内网环境下share你自定义调教的AI模型。使用场景企业内部、学校寝室局域网等等。<br>
+AnythingLLM界面没这个简洁好用。功能太多，配置略复杂点。</p>
 </blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="nb">open</span><span class="o">-</span><span class="n">webui</span> 
-</span></span></code></pre></div><p>一段代码就搞定了。前提是需安装python环境。</p>
+</span></span></code></pre></div><p>1,一段代码就搞定了。前提是需安装python环境。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">#启动Open Web UI，指定端口3000
 </span></span><span class="line"><span class="cl">open-webui serve    --port 3000
-</span></span></code></pre></div><p>然后在浏览器中输入： http://127.0.0.1:3000，即可打开。端口可任意指定，不指定的话默认是8000。</p>
+</span></span></code></pre></div><p>2,然后在浏览器中输入： http://127.0.0.1:3000，即可打开。端口可任意指定，不指定的话默认是8000。</p>
 <blockquote>
 <p><strong>PS</strong>：
 官方推荐用docker安装，我不想在windows上折腾这个。就用python安装了。<br>
@@ -375,7 +386,7 @@ python也推荐用虚拟环境来安装，可以避免弄坏你当前的python�
     aria-label="Article navigation"
     data-aos="fade-up"
   ><div class="article-nav-link-wrap left"><img
-              data-src="https://d-sketon.top/img/_backwebp/bg5.webp"
+              data-src="https://d-sketon.top/img/_backwebp/bg27.webp"
               data-sizes="auto"
               alt="更新日志"
               class="lazyload"
@@ -395,7 +406,7 @@ python也推荐用虚拟环境来安装，可以避免弄坏你当前的python�
       <span class="icon-copyright"></span>2026<span class="footer-info-sep rotate"></span>Umbravow
     </div><div>
         <span class="icon-brush"
-          >&nbsp;1.3k</span
+          >&nbsp;1.4k</span
         >
         &nbsp;|&nbsp;
         <span class="icon-coffee">&nbsp;00:05</span>
@@ -429,6 +440,9 @@ python也推荐用虚拟环境来安装，可以避免弄坏你当前的python�
         <li><a href="#如何本地部署自己的ai模型消费级显卡并通过modelfile文件调试让本地ai模型更适合自己使用">如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。</a></li>
       </ul>
     </li>
+    <li><a href="#安装ollama">安装Ollama</a></li>
+    <li><a href="#modelfile">Modelfile</a></li>
+    <li><a href="#安装open-web-ui">安装Open Web UI</a></li>
   </ul>
 </nav>
 </div></div>
@@ -552,7 +566,7 @@ python也推荐用虚拟环境来安装，可以避免弄坏你当前的python�
           author: "Umbravow",
           title: "本地部署Ollama\u002bQwen3vl-pro\u002bopenwebui\u002bModelfile",
           url: "https:\/\/example.org\/post\/2026-01-11-ollama-qwen3vl-pro-openwebui\/ollama\u002bqwen3vl-pro\u002bopenwebui\/",
-          description: "\r如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。\r安装Ollama\r官网地址： https:\/\/ollama.com\/\n默认安装，安装完成后在设置里根据你的配置设置下面2个参数：\n",
+          description: "\r如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。\r安装Ollama\r官网地址： https:\/\/ollama.com\/\n1,默认安装，安装完成后在设置里根据你电脑配置设置下面2个参数：\n",
           cover: "https:\/\/example.org\/images\/banner.webp",
         };
       </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax ></script><script src="/js/tabs.js" integrity="" crossorigin="anonymous" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
