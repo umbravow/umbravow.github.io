@@ -12,12 +12,41 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Sun, 11 Jan 2026 00:29:03 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 00:41:50 +0800</lastBuildDate>
     
     
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据</title>
+      <link>https://example.org/post/2026-01-12-sql-injection-lab01/</link>
+      <pubDate>Mon, 12 Jan 2026 00:41:50 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>https://example.org/post/2026-01-12-sql-injection-lab01/</guid>
+      <description>
+        <![CDATA[<h1>实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <h2 id="sql注入实验一">
+<a class="header-anchor" href="#sql%e6%b3%a8%e5%85%a5%e5%ae%9e%e9%aa%8c%e4%b8%80"></a>
+SQL注入，实验一
+</h2><h3 id="先看实验要求如下图">
+<a class="header-anchor" href="#%e5%85%88%e7%9c%8b%e5%ae%9e%e9%aa%8c%e8%a6%81%e6%b1%82%e5%a6%82%e4%b8%8b%e5%9b%be"></a>
+先看实验要求，如下图：
+</h3><p><img src="/post/2026-01-12-sql-injection-lab01/image-1.png" alt="alt text"></p>
+<p>实验中的站点存在一个SQL注入漏洞，完成实验检索出隐藏的产品信息。<br>
+开始实验，先查看有多少个产品，有12个。如下图
+<img src="/post/2026-01-12-sql-injection-lab01/image.png" alt="alt text"></p>
+        
+        <hr><p>本文2026-01-12首发于<a href='https://example.org/'>NothingToSay</a>，最后修改于2026-01-12</p>]]>
+      </description>
+      
+        <category>PortSwigger</category>
+      
+    </item>
     
     
 
@@ -42,6 +71,8 @@
         
         <hr><p>本文2026-01-11首发于<a href='https://example.org/'>NothingToSay</a>，最后修改于2026-01-11</p>]]>
       </description>
+      
+        <category>AI</category>
       
     </item>
     

@@ -2,8 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://example.org/categories/</loc>
+    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.org/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.org/categories/"
+                />
+  </url><url>
     <loc>https://example.org/</loc>
-    <lastmod>2026-01-11T00:29:03+08:00</lastmod>
+    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +28,11 @@
                 href="https://example.org/"
                 />
   </url><url>
+    <loc>https://example.org/categories/portswigger/</loc>
+    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
+  </url><url>
     <loc>https://example.org/post/</loc>
-    <lastmod>2026-01-11T00:29:03+08:00</lastmod>
+    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +43,12 @@
                 hreflang="zh-cn"
                 href="https://example.org/post/"
                 />
+  </url><url>
+    <loc>https://example.org/post/2026-01-12-sql-injection-lab01/</loc>
+    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
+  </url><url>
+    <loc>https://example.org/categories/ai/</loc>
+    <lastmod>2026-01-11T00:29:03+08:00</lastmod>
   </url><url>
     <loc>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</loc>
     <lastmod>2026-01-11T00:29:03+08:00</lastmod>
@@ -74,18 +96,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://example.org/friend/"
-                />
-  </url><url>
-    <loc>https://example.org/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.org/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://example.org/categories/"
                 />
   </url><url>
     <loc>https://example.org/tags/</loc>

@@ -8,7 +8,7 @@
   name="viewport"
   content="width=device-width, initial-scale=1, shrink-to-fit=no"
 /><title>
-  标签 | Umbravow
+  实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据 | Umbravow
 </title>
 <meta name="description" content="少女祈祷中..."/><script>
   window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"https://example.org/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"i18n_languages\":[{\"Lang\":\"zh-cn\",\"LanguageName\":\"简体中文\",\"LanguageCode\":\"\",\"Title\":\"\",\"LanguageDirection\":\"\",\"Weight\":1,\"Disabled\":false},{\"Lang\":\"en\",\"LanguageName\":\"English\",\"LanguageCode\":\"\",\"Title\":\"\",\"LanguageDirection\":\"\",\"Weight\":2,\"Disabled\":false}],\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
@@ -33,12 +33,12 @@
     type="font/woff2"
     crossorigin="anonymous"
   /><link rel="stylesheet" href="/css/loader.min.ac746e154f756f8220326eeb52a719f142ab038be5a8ddf30ea5ef15ef2356ea.css" /><meta property="og:type" content="website" />
-  <meta property="og:title" content="标签 | Umbravow" />
+  <meta property="og:title" content="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据 | Umbravow" />
   <meta
     property="og:description"
     content="少女祈祷中..."
   />
-  <meta property="og:url" content="https://example.org/tags/" />
+  <meta property="og:url" content="https://example.org/post/2026-01-12-sql-injection-lab01/" />
   <meta
     property="og:site_name"
     content="NothingToSay"
@@ -48,9 +48,9 @@
     content="/"
   />
   <meta property="article:author" content="Umbravow" />
-  <meta property="article:published_time" content="0001-01-01T00:00:00&#43;00:00" />
-  <meta property="article:modified_time" content="0001-01-01T00:00:00&#43;00:00" /><meta name="twitter:card" content="summary" />
-  <meta name="twitter:image" content="/" /><link rel="alternate" type="application/rss+xml" href="https://example.org/tags/index.xml" title="NothingToSay">
+  <meta property="article:published_time" content="2026-01-12T00:41:50&#43;08:00" />
+  <meta property="article:modified_time" content="2026-01-12T00:41:50&#43;08:00" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/" />
 <link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.9675465ab30674bec37c27df88ac3b68d44f3ec8af33d3da370a3a36787ea8ca.css" /><link
     rel="preload"
     as="style"
@@ -124,7 +124,7 @@
       </a><a class="main-nav-link-wrap" href="/friend"><div class='main-nav-icon icon rotate'>&#xe62b;</div><span class="main-nav-link">友链</span>
       </a><a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
   </nav>
-  <nav id="sub-nav" aria-label="Secondary navigation"><a id="nav-rss-link" class="nav-icon" href="/tags/index.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a></nav><nav id="i18n-nav" aria-label="Language selection">
+  <nav id="sub-nav" aria-label="Secondary navigation"></nav><nav id="i18n-nav" aria-label="Language selection">
       <div class="custom-dropdown">
         <div class="select-selected" id="select-selected" role="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language menu">
           <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
@@ -146,7 +146,7 @@
 
         selectOptions.forEach((item) => {
           item.addEventListener("click", () => {
-            const langMap = {};langMap['en'] = '\/en\/tags\/';selectedLang.textContent = item.textContent;
+            const langMap = {};selectedLang.textContent = item.textContent;
             selectItems.classList.remove("show");
             selectOptions.forEach((option) => {
               option.classList.remove("selected");
@@ -174,19 +174,31 @@
         });
       </script>
     </nav></div>
-<header id="header" aria-label="Site header"><picture></picture><img  fetchpriority="high" src="/images/banner.webp" alt="Tags"><div id="header-outer">
+<header id="header" aria-label="Site header"><picture></picture><img  fetchpriority="high" src="/images/banner.webp" alt="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据"><div id="header-outer">
     <div id="header-title"><span id="logo">
-            <h1 data-aos="slide-up">标签</h1>
+            <h1 data-aos="slide-up">实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据</h1>
           </span><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
   </div>
 </header><div id="content"
           aria-label="Page content"
           class="sidebar-left"
-            ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container "><div class="sidebar-wrapper">
+            ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
     <div
       class="sidebar-wrap"
       data-aos="fade-up"
-    ><div class="sidebar-author">
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sql注入实验一">SQL注入，实验一</a>
+      <ul>
+        <li><a href="#先看实验要求如下图">先看实验要求，如下图：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img
     data-src="/avatar/avatar.webp"
     data-sizes="auto"
@@ -251,57 +263,138 @@
         href="/friend"
         aria-label="友链"
       ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">友链</div>
-    </div></div></div>
-  </div><div class="sidebar-widget"><div class="widget-wrapper">
-    <div
-      class="widget-wrap"
-      data-aos="fade-up"
-    >
-      <div style="display: flex; justify-content: space-between;">
-        <h3 class="widget-title">分类</h3></div>
-      <div class="widget">
-        <ul class="category-list"><li class="category-list-item">
-                <a class="category-list-link" href="/categories/ai/" 
-                  title="AI"
-                  >AI</a
-                >
-              </li><li class="category-list-item">
-                <a class="category-list-link" href="/categories/portswigger/" 
-                  title="PortSwigger"
-                  >PortSwigger</a
-                >
-              </li></ul>
-      </div>
-    </div>
-  </div><div class="widget-wrapper">
-    <div
-      class="widget-wrap"
-      data-aos="fade-up"
-    >
-      <h3 class="widget-title">最新文章</h3>
-      <div class="widget">
-        <ul><li>
-              <a href="/post/2026-01-12-sql-injection-lab01/" title="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据">实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据</a>
-            </li><li>
-              <a href="/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/" title="本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile">本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile</a>
-            </li><li>
-              <a href="/post/update/updates/" title="更新日志">更新日志</a>
-            </li><li>
-              <a href="/post/helloworld/helloworld/" title="Hello world">Hello world</a>
-            </li></ul>
-      </div>
-    </div>
-  </div></div></div></aside>
-<section id="main" aria-label="Main content"><div
-    class="archives-outer-wrap"
+    </div></div></div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main" aria-label="Main content"><article
+  class="h-entry article"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
     data-aos="fade-up"
   >
-    <div
-      class="
-        tag-wrap
-      "
-    ></div>
-  </div></section>
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="zoom-in"
+  >
+    <time datetime="2026-01-12 00:41:50 &#43;0800 CST" itemprop="datePublished"
+      >2026-01-12</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2026-01-12</time
+    >
+  </span></div>
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h2 id="sql注入实验一">
+<a class="header-anchor" href="#sql%e6%b3%a8%e5%85%a5%e5%ae%9e%e9%aa%8c%e4%b8%80"></a>
+SQL注入，实验一
+</h2><h3 id="先看实验要求如下图">
+<a class="header-anchor" href="#%e5%85%88%e7%9c%8b%e5%ae%9e%e9%aa%8c%e8%a6%81%e6%b1%82%e5%a6%82%e4%b8%8b%e5%9b%be"></a>
+先看实验要求，如下图：
+</h3><p><img src="/post/2026-01-12-sql-injection-lab01/image-1.png" alt="alt text"></p>
+<p>实验中的站点存在一个SQL注入漏洞，完成实验检索出隐藏的产品信息。<br>
+开始实验，先查看有多少个产品，有12个。如下图
+<img src="/post/2026-01-12-sql-injection-lab01/image.png" alt="alt text"></p>
+<hr>
+<p>首先，我们先随便选一个类别，假设图中的“gifts”。然后查看浏览器地址栏，把category=Gifts，修改成category='</p>
+<p><img src="/post/2026-01-12-sql-injection-lab01/image-3.png" alt="alt text"></p>
+<p>输入回车，页面报错，提示“Internal Server Error”</p>
+<p>OK，发现注入点。</p>
+<p>接着直接改成category=&rsquo;+OR+1=1--</p>
+<p><img src="/post/2026-01-12-sql-injection-lab01/image-4.png" alt="alt text"></p>
+<p>页面显示恭喜，解决了这个实验。</p>
+<p>然后往下拉发现有20个产品。</p>
+<hr>
+<p>讲解下：&quot; &lsquo;+OR+1=1-- &quot;</p>
+<blockquote>
+<p>&quot; ` &ldquo;作用是：打断系统原本的句子结构，让我能插入自己的命令。<br>
+&rdquo; + &ldquo;等同于空格<br>
+&rdquo; OR &quot; 或<br>
+&quot; 1=1 &quot; 始终为真<br>
+&quot; -- &ldquo;后面的内容将被忽略</p>
+</blockquote>
+</div>
+    <footer class="article-footer"><blockquote class="article-copyright"><p><strong><span class="icon-user icon"></span>本文作者：</strong>Umbravow</p><p>
+      <strong><span class="icon-link icon"></span>本文链接：</strong><a href="https://example.org/post/2026-01-12-sql-injection-lab01/">https://example.org/post/2026-01-12-sql-injection-lab01/</a>
+    </p><p><strong><span class="icon-pencil icon"></span>本文标题：</strong>实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据</p><p><strong><span class="icon-calendar icon"></span>本文发布时间：</strong>2026-01-12 00:41:50</p><p>
+      
+      <strong><span class="icon-copyright icon"></span>本文版权：</strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！
+    </p>
+    <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
+<div class="share-wrapper"><a href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/post/2026-01-12-sql-injection-lab01/" target="_blank" rel="noopener noreferrer" title="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据">
+      <div class="share-icon icon icon-facebook"></div>
+    </a><a href="https://twitter.com/intent/tweet?url=https://example.org/post/2026-01-12-sql-injection-lab01/&amp;text=%e5%ae%9e%e9%aa%8c%ef%bc%9aWHERE%20%e5%8f%a5%e5%ad%90%e7%9a%84SQL%e6%b3%a8%e5%85%a5%e6%bc%8f%e6%b4%9e%e5%85%81%e8%ae%b8%e6%a3%80%e7%b4%a2%e9%9a%90%e8%97%8f%e6%95%b0%e6%8d%ae&amp;via=https://example.org/" target="_blank" rel="noopener noreferrer" title="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据">
+      <div class="share-icon icon icon-twitter"></div>
+    </a><a href="https://www.linkedin.com/shareArticle?url=https://example.org/post/2026-01-12-sql-injection-lab01/&amp;title=%e5%ae%9e%e9%aa%8c%ef%bc%9aWHERE%20%e5%8f%a5%e5%ad%90%e7%9a%84SQL%e6%b3%a8%e5%85%a5%e6%bc%8f%e6%b4%9e%e5%85%81%e8%ae%b8%e6%a3%80%e7%b4%a2%e9%9a%90%e8%97%8f%e6%95%b0%e6%8d%ae&amp;summary=%0dSQL%e6%b3%a8%e5%85%a5%ef%bc%8c%e5%ae%9e%e9%aa%8c%e4%b8%80%0d%e5%85%88%e7%9c%8b%e5%ae%9e%e9%aa%8c%e8%a6%81%e6%b1%82%ef%bc%8c%e5%a6%82%e4%b8%8b%e5%9b%be%ef%bc%9a%0d%e5%ae%9e%e9%aa%8c%e4%b8%ad%e7%9a%84%e7%ab%99%e7%82%b9%e5%ad%98%e5%9c%a8%e4%b8%80%e4%b8%aaSQL%e6%b3%a8%e5%85%a5%e6%bc%8f%e6%b4%9e%ef%bc%8c%e5%ae%8c%e6%88%90%e5%ae%9e%e9%aa%8c%e6%a3%80%e7%b4%a2%e5%87%ba%e9%9a%90%e8%97%8f%e7%9a%84%e4%ba%a7%e5%93%81%e4%bf%a1%e6%81%af%e3%80%82%0a%e5%bc%80%e5%a7%8b%e5%ae%9e%e9%aa%8c%ef%bc%8c%e5%85%88%e6%9f%a5%e7%9c%8b%e6%9c%89%e5%a4%9a%e5%b0%91%e4%b8%aa%e4%ba%a7%e5%93%81%ef%bc%8c%e6%9c%8912%e4%b8%aa%e3%80%82%e5%a6%82%e4%b8%8b%e5%9b%be%20&amp;mini=true&amp;ro=true" target="_blank" rel="noopener noreferrer" title="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据">
+      <div class="share-icon icon icon-linkedin"></div>
+    </a><a href="https://www.reddit.com/submit?url=https://example.org/post/2026-01-12-sql-injection-lab01/&amp;title=%e5%ae%9e%e9%aa%8c%ef%bc%9aWHERE%20%e5%8f%a5%e5%ad%90%e7%9a%84SQL%e6%b3%a8%e5%85%a5%e6%bc%8f%e6%b4%9e%e5%85%81%e8%ae%b8%e6%a3%80%e7%b4%a2%e9%9a%90%e8%97%8f%e6%95%b0%e6%8d%ae" target="_blank" rel="noopener noreferrer" title="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据">
+      <div class="share-icon icon icon-reddit"></div>
+    </a><a href="https://service.weibo.com/share/share.php?url=https://example.org/post/2026-01-12-sql-injection-lab01/&amp;appkey=&amp;title=%e5%ae%9e%e9%aa%8c%ef%bc%9aWHERE%20%e5%8f%a5%e5%ad%90%e7%9a%84SQL%e6%b3%a8%e5%85%a5%e6%bc%8f%e6%b4%9e%e5%85%81%e8%ae%b8%e6%a3%80%e7%b4%a2%e9%9a%90%e8%97%8f%e6%95%b0%e6%8d%ae&amp;pic=&amp;ralateUid=" target="_blank" rel="noopener noreferrer" title="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据">
+      <div class="share-icon icon icon-weibo"></div>
+    </a><a href="https://connect.qq.com/widget/shareqq/index.html?url=https://example.org/post/2026-01-12-sql-injection-lab01/&amp;title=%e5%ae%9e%e9%aa%8c%ef%bc%9aWHERE%20%e5%8f%a5%e5%ad%90%e7%9a%84SQL%e6%b3%a8%e5%85%a5%e6%bc%8f%e6%b4%9e%e5%85%81%e8%ae%b8%e6%a3%80%e7%b4%a2%e9%9a%90%e8%97%8f%e6%95%b0%e6%8d%ae&amp;desc=%0dSQL%e6%b3%a8%e5%85%a5%ef%bc%8c%e5%ae%9e%e9%aa%8c%e4%b8%80%0d%e5%85%88%e7%9c%8b%e5%ae%9e%e9%aa%8c%e8%a6%81%e6%b1%82%ef%bc%8c%e5%a6%82%e4%b8%8b%e5%9b%be%ef%bc%9a%0d%e5%ae%9e%e9%aa%8c%e4%b8%ad%e7%9a%84%e7%ab%99%e7%82%b9%e5%ad%98%e5%9c%a8%e4%b8%80%e4%b8%aaSQL%e6%b3%a8%e5%85%a5%e6%bc%8f%e6%b4%9e%ef%bc%8c%e5%ae%8c%e6%88%90%e5%ae%9e%e9%aa%8c%e6%a3%80%e7%b4%a2%e5%87%ba%e9%9a%90%e8%97%8f%e7%9a%84%e4%ba%a7%e5%93%81%e4%bf%a1%e6%81%af%e3%80%82%0a%e5%bc%80%e5%a7%8b%e5%ae%9e%e9%aa%8c%ef%bc%8c%e5%85%88%e6%9f%a5%e7%9c%8b%e6%9c%89%e5%a4%9a%e5%b0%91%e4%b8%aa%e4%ba%a7%e5%93%81%ef%bc%8c%e6%9c%8912%e4%b8%aa%e3%80%82%e5%a6%82%e4%b8%8b%e5%9b%be%20&amp;source=https://example.org/" target="_blank" rel="noopener noreferrer" title="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据">
+      <div class="share-icon icon icon-qq"></div>
+    </a><a href="javascript:;"  title="实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据">
+      <div class="share-icon icon icon-weixin"><div id="share-weixin">
+            <div class="share-weixin-dom">
+              <div class="share-weixin-content">
+                <img id="share-weixin-banner"> 
+                <div id="share-weixin-title"></div>
+                <div id="share-weixin-desc"></div>
+              </div>
+              <div class="share-weixin-qrcode">
+                <div class="share-weixin-info">
+                  <div id="share-weixin-author"></div>
+                  <div id="share-weixin-theme">Powered By hugo-theme-reimu</div>
+                </div>
+                <img id="share-weixin-qr" >
+              </div>
+            </div>
+            <div class="share-weixin-canvas"></div>
+          </div></div>
+    </a></div><ul class="article-category-list"><li class="article-tag-list-item" data-aos="zoom-in">
+    <a
+      class="article-category-link"
+      href="/categories/portswigger"
+      data-aos="zoom-in"
+      >PortSwigger</a
+    >
+    </li></ul>
+<ul class="article-tag-list" itemprop="keywords"></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    aria-label="Article navigation"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap left"><img
+              data-src="https://d-sketon.top/img/_backwebp/bg26.webp"
+              data-sizes="auto"
+              alt="本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile"
+              class="lazyload"
+            /><a
+          href="/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/"
+          aria-label="前一篇:本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile"
+          title="前一篇:本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile"
+        ></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile</h3>
+      </div></nav></article><section id="comments" data-aos="fade-up">
+<div class="comment-header"><h2 class="comment-title">说些什么吧！</h2>
+  <div class="comment-selector">
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="giscus">
+          <span>giscus</span>
+        </div></div>
+  </div>
+</div>
+
+<div class="comment-content"><div class="comment giscus-comment" data-aos="fade-up"
+     >
+    </div></div>
+</section></section>
         </div><footer id="footer" aria-label="Site footer">
   <div style="width: 100%; overflow: hidden">
     <div class="footer-line"></div>
@@ -335,7 +428,19 @@
             <div class="arrow-up"></div>
           </div><div id="mask" class="hide"></div>
       </div><nav id="mobile-nav" aria-label="Mobile navigation">
-  <div class="sidebar-wrap"><div class="sidebar-author">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sql注入实验一">SQL注入，实验一</a>
+      <ul>
+        <li><a href="#先看实验要求如下图">先看实验要求，如下图：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img
     data-src="/avatar/avatar.webp"
     data-sizes="auto"
@@ -400,7 +505,10 @@
         href="/friend"
         aria-label="友链"
       ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">友链</div>
-    </div></div></div></nav>
+    </div></div></div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
 </div><script
     src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
     
@@ -450,9 +558,9 @@
   <div><script data-pjax>
         window.REIMU_POST = {
           author: "Umbravow",
-          title: "Tags",
-          url: "https:\/\/example.org\/tags\/",
-          description: "",
+          title: "实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据",
+          url: "https:\/\/example.org\/post\/2026-01-12-sql-injection-lab01\/",
+          description: "\rSQL注入，实验一\r先看实验要求，如下图：\r实验中的站点存在一个SQL注入漏洞，完成实验检索出隐藏的产品信息。\n开始实验，先查看有多少个产品，有12个。如下图 ",
           cover: "https:\/\/example.org\/images\/banner.webp",
         };
       </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax ></script><script src="/js/tabs.js" integrity="" crossorigin="anonymous" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
