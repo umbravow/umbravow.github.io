@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unaligned  on NothingToSay</title>
-    <link>http://localhost:1313/tags/unaligned-/</link>
+    <link>https://example.org/tags/unaligned-/</link>
     <description>Recent content from NothingToSay</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Mon, 12 Jan 2026 23:31:06 +0800</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/tags/unaligned-/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://example.org/tags/unaligned-/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Windows下训练ai-base模型</title>
-      <link>http://localhost:1313/post/2026-01-12-%E8%AE%AD%E7%BB%83base%E6%A8%A1%E5%9E%8B/</link>
+      <link>https://example.org/post/2026-01-12-%E8%AE%AD%E7%BB%83base%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Mon, 12 Jan 2026 23:31:06 &#43;0800</pubDate>
       <author>Umbravow@gmail.com (Umbravow)</author>
-      <guid>http://localhost:1313/post/2026-01-12-%E8%AE%AD%E7%BB%83base%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>https://example.org/post/2026-01-12-%E8%AE%AD%E7%BB%83base%E6%A8%A1%E5%9E%8B/</guid>
       <description>
         <![CDATA[<h1>Windows下训练ai-base模型</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
         
@@ -37,7 +37,7 @@ Windows下训练ai-base模型
 <p>现在市面上大部分模型基本都是Instruct模型，这种模型有RLHF、对齐都帮你弄好了。<br>
 Base模型，没有这些东西，做专业技术方面的研究等其他方面更合适点。</p>
         
-        <hr><p>本文2026-01-12首发于<a href='http://localhost:1313/'>NothingToSay</a>，最后修改于2026-01-12</p>]]>
+        <hr><p>本文2026-01-12首发于<a href='https://example.org/'>NothingToSay</a>，最后修改于2026-01-12</p>]]>
       </description>
       
         <category>AI</category>

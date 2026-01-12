@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Instruct on NothingToSay</title>
-    <link>http://localhost:1313/tags/instruct/</link>
+    <link>https://example.org/tags/instruct/</link>
     <description>Recent content from NothingToSay</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sun, 11 Jan 2026 00:29:03 +0800</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/tags/instruct/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://example.org/tags/instruct/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile</title>
-      <link>http://localhost:1313/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</link>
+      <link>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</link>
       <pubDate>Sun, 11 Jan 2026 00:29:03 &#43;0800</pubDate>
       <author>Umbravow@gmail.com (Umbravow)</author>
-      <guid>http://localhost:1313/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</guid>
+      <guid>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</guid>
       <description>
         <![CDATA[<h1>本地部署Ollama+Qwen3vl-pro+openwebui+Modelfile</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
         
@@ -40,7 +40,7 @@
 </h2><p>官网地址： <a href="https://ollama.com/">https://ollama.com/</a></p>
 <p>1,默认安装，安装完成后在设置里根据你电脑配置设置下面2个参数：</p>
         
-        <hr><p>本文2026-01-11首发于<a href='http://localhost:1313/'>NothingToSay</a>，最后修改于2026-01-11</p>]]>
+        <hr><p>本文2026-01-11首发于<a href='https://example.org/'>NothingToSay</a>，最后修改于2026-01-11</p>]]>
       </description>
       
         <category>AI</category>

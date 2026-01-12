@@ -2,122 +2,131 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/ai/</loc>
+    <loc>https://example.org/categories/ai/</loc>
     <lastmod>2026-01-12T23:31:06+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>https://example.org/tags/ai/</loc>
     <lastmod>2026-01-12T23:31:06+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-01-12T23:31:06+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/categories/</loc>
     <lastmod>2026-01-12T23:31:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="https://example.org/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/"
+                href="https://example.org/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://example.org/tags/gguf/</loc>
+    <lastmod>2026-01-12T23:31:06+08:00</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
     <lastmod>2026-01-12T23:31:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/post/"
+                href="https://example.org/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/post/"
+                href="https://example.org/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/post/</loc>
     <lastmod>2026-01-12T23:31:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="https://example.org/en/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/"
+                href="https://example.org/post/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/unaligned-/</loc>
+    <loc>https://example.org/tags/python/</loc>
     <lastmod>2026-01-12T23:31:06+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2026-01-12-%E8%AE%AD%E7%BB%83base%E6%A8%A1%E5%9E%8B/</loc>
+    <loc>https://example.org/tags/</loc>
+    <lastmod>2026-01-12T23:31:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.org/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.org/tags/"
+                />
+  </url><url>
+    <loc>https://example.org/tags/unaligned-/</loc>
     <lastmod>2026-01-12T23:31:06+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/portswigger/</loc>
+    <loc>https://example.org/post/2026-01-12-%E8%AE%AD%E7%BB%83base%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-01-12T23:31:06+08:00</lastmod>
+  </url><url>
+    <loc>https://example.org/categories/portswigger/</loc>
     <lastmod>2026-01-12T00:41:50+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2026-01-12-sql-injection-lab01/</loc>
+    <loc>https://example.org/post/2026-01-12-sql-injection-lab01/</loc>
     <lastmod>2026-01-12T00:41:50+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</loc>
+    <loc>https://example.org/tags/instruct/</loc>
     <lastmod>2026-01-11T00:29:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/update/updates/</loc>
+    <loc>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</loc>
+    <lastmod>2026-01-11T00:29:03+08:00</lastmod>
+  </url><url>
+    <loc>https://example.org/post/update/updates/</loc>
     <lastmod>2026-01-08T01:00:37+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/helloworld/helloworld/</loc>
+    <loc>https://example.org/post/helloworld/helloworld/</loc>
     <lastmod>2026-01-08T01:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://example.org/archives/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/archives/"
+                href="https://example.org/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/archives/"
+                href="https://example.org/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://example.org/about/</loc>
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/about/"
+                href="https://example.org/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/about/"
+                href="https://example.org/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/friend/</loc>
+    <loc>https://example.org/friend/</loc>
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/friend/"
+                href="https://example.org/en/friend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/friend/"
+                href="https://example.org/friend/"
                 />
   </url>
 </urlset>
