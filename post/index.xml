@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on NothingToSay</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content from NothingToSay</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    
+    <managingEditor>Umbravow@gmail.com (Umbravow)</managingEditor>
+    <webMaster>Umbravow@gmail.com (Umbravow)</webMaster>
+    
+    <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
+    
+    <lastBuildDate>Mon, 12 Jan 2026 23:31:06 +0800</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Windows下训练ai-base模型</title>
+      <link>http://localhost:1313/post/2026-01-12-%E8%AE%AD%E7%BB%83base%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 12 Jan 2026 23:31:06 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>http://localhost:1313/post/2026-01-12-%E8%AE%AD%E7%BB%83base%E6%A8%A1%E5%9E%8B/</guid>
+      <description>
+        <![CDATA[<h1>Windows下训练ai-base模型</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <h1 id="windows下训练ai-base模型">
+<a class="header-anchor" href="#windows%e4%b8%8b%e8%ae%ad%e7%bb%83ai-base%e6%a8%a1%e5%9e%8b"></a>
+Windows下训练ai-base模型
+</h1><hr>
+<p>现在市面上大部分模型基本都是Instruct模型，这种模型有RLHF、对齐都帮你弄好了。<br>
+Base模型，没有这些东西，做专业技术方面的研究等其他方面更合适点。</p>
+        
+        <hr><p>本文2026-01-12首发于<a href='http://localhost:1313/'>NothingToSay</a>，最后修改于2026-01-12</p>]]>
+      </description>
+      
+        <category>AI</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据</title>
+      <link>http://localhost:1313/post/2026-01-12-sql-injection-lab01/</link>
+      <pubDate>Mon, 12 Jan 2026 00:41:50 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>http://localhost:1313/post/2026-01-12-sql-injection-lab01/</guid>
+      <description>
+        <![CDATA[<h1>实验：WHERE 句子的SQL注入漏洞允许检索隐藏数据</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <h2 id="sql注入实验一">
+<a class="header-anchor" href="#sql%e6%b3%a8%e5%85%a5%e5%ae%9e%e9%aa%8c%e4%b8%80"></a>
+SQL注入，实验一
+</h2><h3 id="先看实验要求如下图">
+<a class="header-anchor" href="#%e5%85%88%e7%9c%8b%e5%ae%9e%e9%aa%8c%e8%a6%81%e6%b1%82%e5%a6%82%e4%b8%8b%e5%9b%be"></a>
+先看实验要求，如下图：
+</h3><p><img src="/post/2026-01-12-sql-injection-lab01/image-1.png" alt="alt text"></p>
+<p>实验中的站点存在一个SQL注入漏洞，完成实验检索出隐藏的产品信息。<br>
+开始实验，先查看有多少个产品，有12个。如下图
+<img src="/post/2026-01-12-sql-injection-lab01/image.png" alt="alt text"></p>
+        
+        <hr><p>本文2026-01-12首发于<a href='http://localhost:1313/'>NothingToSay</a>，最后修改于2026-01-12</p>]]>
+      </description>
+      
+        <category>PortSwigger</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile</title>
+      <link>http://localhost:1313/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</link>
+      <pubDate>Sun, 11 Jan 2026 00:29:03 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>http://localhost:1313/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</guid>
+      <description>
+        <![CDATA[<h1>本地部署Ollama+Qwen3vl-pro+openwebui+Modelfile</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <h3 id="如何本地部署自己的ai模型消费级显卡并通过modelfile文件调试让本地ai模型更适合自己使用">
+<a class="header-anchor" href="#%e5%a6%82%e4%bd%95%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2%e8%87%aa%e5%b7%b1%e7%9a%84ai%e6%a8%a1%e5%9e%8b%e6%b6%88%e8%b4%b9%e7%ba%a7%e6%98%be%e5%8d%a1%e5%b9%b6%e9%80%9a%e8%bf%87modelfile%e6%96%87%e4%bb%b6%e8%b0%83%e8%af%95%e8%ae%a9%e6%9c%ac%e5%9c%b0ai%e6%a8%a1%e5%9e%8b%e6%9b%b4%e9%80%82%e5%90%88%e8%87%aa%e5%b7%b1%e4%bd%bf%e7%94%a8"></a>
+如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。
+</h3><hr>
+<h2 id="安装ollama">
+<a class="header-anchor" href="#%e5%ae%89%e8%a3%85ollama"></a>
+安装Ollama
+</h2><p>官网地址： <a href="https://ollama.com/">https://ollama.com/</a></p>
+<p>1,默认安装，安装完成后在设置里根据你电脑配置设置下面2个参数：</p>
+        
+        <hr><p>本文2026-01-11首发于<a href='http://localhost:1313/'>NothingToSay</a>，最后修改于2026-01-11</p>]]>
+      </description>
+      
+        <category>AI</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>更新日志</title>
+      <link>http://localhost:1313/post/update/updates/</link>
+      <pubDate>Thu, 08 Jan 2026 01:00:37 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>http://localhost:1313/post/update/updates/</guid>
+      <description>
+        <![CDATA[<h1>更新日志</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <h1 id="2026-01-06">
+<a class="header-anchor" href="#2026-01-06"></a>
+2026-01-06
+</h1><ul>
+<li>
+<p style="font-size: 1.2rem;"> <strong>启用 Goldmark 的 unsafe 模式</strong> </p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="p">[</span><span class="n">markup</span><span class="p">.</span><span class="n">goldmark</span><span class="p">.</span><span class="n">renderer</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">unsafe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div><blockquote>
+<p>⚠️避免所有的style=&quot;&hellip;&quot; 都会被 Hugo 自动删掉。</p>
+</blockquote>
+<ul>
+<li><strong><p style="font-size: 1.2rem;"> 改变字体大小前面没有#符号，并且还可以设置字体颜色。效果如下：</p>
+        
+        <hr><p>本文2026-01-08首发于<a href='http://localhost:1313/'>NothingToSay</a>，最后修改于2026-01-08</p>]]>
+      </description>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Hello world</title>
+      <link>http://localhost:1313/post/helloworld/helloworld/</link>
+      <pubDate>Thu, 08 Jan 2026 01:00:00 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>http://localhost:1313/post/helloworld/helloworld/</guid>
+      <description>
+        <![CDATA[<h1>Hello world</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <blockquote>
+<h1 id="hello-world">
+<a class="header-anchor" href="#hello-world"></a>
+<strong>Hello World</strong>
+</h1></blockquote>
+        
+        <hr><p>本文2026-01-08首发于<a href='http://localhost:1313/'>NothingToSay</a>，最后修改于2026-01-08</p>]]>
+      </description>
+      
+    </item>
+    
+  </channel>
+</rss>
