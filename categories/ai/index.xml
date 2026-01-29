@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI on NothingToSay</title>
-    <link>https://example.org/categories/ai/</link>
+    <link>https://umbravow.github.io/categories/ai/</link>
     <description>Recent content from NothingToSay</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
@@ -12,21 +12,43 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Sun, 11 Jan 2026 00:29:03 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 23:30:41 +0800</lastBuildDate>
     
     
-    <atom:link href="https://example.org/categories/ai/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://umbravow.github.io/categories/ai/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
     
 
     <item>
+      <title>国内用户本地部署Clawdbot(Moltbot)</title>
+      <link>https://umbravow.github.io/post/2026-01-29-clawdbot/</link>
+      <pubDate>Thu, 29 Jan 2026 23:30:41 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>https://umbravow.github.io/post/2026-01-29-clawdbot/</guid>
+      <description>
+        <![CDATA[<h1>国内用户本地部署Clawdbot(Moltbot)</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <blockquote>
+<p>最近这个Clawdbot很火阿，让AI从被动的一问一答变成一个主动的agent了。其实之前一直有，Comet浏览器里就有个Assistant，不过它只能在浏览器里操作。
+Clawdbot不一样了，调用各种软件主动提醒你，帮你处理日常事务、邮件、行程安排，不仅仅只是对话。这里就不过多介绍了。</p>
+        
+        <hr><p>本文2026-01-29首发于<a href='https://umbravow.github.io/'>NothingToSay</a>，最后修改于2026-01-29</p>]]>
+      </description>
+      
+        <category>AI</category>
+      
+    </item>
+    
+    
+
+    <item>
       <title>本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile</title>
-      <link>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</link>
+      <link>https://umbravow.github.io/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</link>
       <pubDate>Sun, 11 Jan 2026 00:29:03 &#43;0800</pubDate>
       <author>Umbravow@gmail.com (Umbravow)</author>
-      <guid>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</guid>
+      <guid>https://umbravow.github.io/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</guid>
       <description>
         <![CDATA[<h1>本地部署Ollama+Qwen3vl-pro+openwebui+Modelfile</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
         
@@ -40,7 +62,7 @@
 </h2><p>官网地址： <a href="https://ollama.com/">https://ollama.com/</a></p>
 <p>1,默认安装，安装完成后在设置里根据你电脑配置设置下面2个参数：</p>
         
-        <hr><p>本文2026-01-11首发于<a href='https://example.org/'>NothingToSay</a>，最后修改于2026-01-11</p>]]>
+        <hr><p>本文2026-01-11首发于<a href='https://umbravow.github.io/'>NothingToSay</a>，最后修改于2026-01-11</p>]]>
       </description>
       
         <category>AI</category>

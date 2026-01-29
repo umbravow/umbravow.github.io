@@ -2,112 +2,128 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/</loc>
-    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
+    <loc>https://umbravow.github.io/categories/ai/</loc>
+    <lastmod>2026-01-29T23:30:41+08:00</lastmod>
+  </url><url>
+    <loc>https://umbravow.github.io/categories/</loc>
+    <lastmod>2026-01-29T23:30:41+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.org/en/categories/"
+                href="https://umbravow.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.org/categories/"
+                href="https://umbravow.github.io/categories/"
                 />
   </url><url>
-    <loc>https://example.org/</loc>
-    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
+    <loc>https://umbravow.github.io/</loc>
+    <lastmod>2026-01-29T23:30:41+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.org/en/"
+                href="https://umbravow.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.org/"
+                href="https://umbravow.github.io/"
                 />
   </url><url>
-    <loc>https://example.org/categories/portswigger/</loc>
-    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
-  </url><url>
-    <loc>https://example.org/post/</loc>
-    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
+    <loc>https://umbravow.github.io/post/</loc>
+    <lastmod>2026-01-29T23:30:41+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.org/en/post/"
+                href="https://umbravow.github.io/en/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.org/post/"
+                href="https://umbravow.github.io/post/"
                 />
   </url><url>
-    <loc>https://example.org/post/2026-01-12-sql-injection-lab01/</loc>
+    <loc>https://umbravow.github.io/post/2026-01-29-clawdbot/</loc>
+    <lastmod>2026-01-29T23:30:41+08:00</lastmod>
+  </url><url>
+    <loc>https://umbravow.github.io/categories/portswigger/</loc>
     <lastmod>2026-01-12T00:41:50+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/ai/</loc>
+    <loc>https://umbravow.github.io/post/2026-01-12-sql-injection-lab01/</loc>
+    <lastmod>2026-01-12T00:41:50+08:00</lastmod>
+  </url><url>
+    <loc>https://umbravow.github.io/tags/ai/</loc>
     <lastmod>2026-01-11T00:29:03+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</loc>
+    <loc>https://umbravow.github.io/tags/gguf/</loc>
     <lastmod>2026-01-11T00:29:03+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/post/update/updates/</loc>
+    <loc>https://umbravow.github.io/tags/instruct/</loc>
+    <lastmod>2026-01-11T00:29:03+08:00</lastmod>
+  </url><url>
+    <loc>https://umbravow.github.io/tags/python/</loc>
+    <lastmod>2026-01-11T00:29:03+08:00</lastmod>
+  </url><url>
+    <loc>https://umbravow.github.io/tags/</loc>
+    <lastmod>2026-01-11T00:29:03+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://umbravow.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://umbravow.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://umbravow.github.io/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</loc>
+    <lastmod>2026-01-11T00:29:03+08:00</lastmod>
+  </url><url>
+    <loc>https://umbravow.github.io/post/update/updates/</loc>
     <lastmod>2026-01-08T01:00:37+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/post/helloworld/helloworld/</loc>
+    <loc>https://umbravow.github.io/post/helloworld/helloworld/</loc>
     <lastmod>2026-01-08T01:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/archives/</loc>
+    <loc>https://umbravow.github.io/archives/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.org/en/archives/"
+                href="https://umbravow.github.io/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.org/archives/"
+                href="https://umbravow.github.io/archives/"
                 />
   </url><url>
-    <loc>https://example.org/about/</loc>
+    <loc>https://umbravow.github.io/about/</loc>
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.org/en/about/"
+                href="https://umbravow.github.io/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.org/about/"
+                href="https://umbravow.github.io/about/"
                 />
   </url><url>
-    <loc>https://example.org/friend/</loc>
+    <loc>https://umbravow.github.io/friend/</loc>
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.org/en/friend/"
+                href="https://umbravow.github.io/en/friend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://example.org/friend/"
-                />
-  </url><url>
-    <loc>https://example.org/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.org/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://example.org/tags/"
+                href="https://umbravow.github.io/friend/"
                 />
   </url>
 </urlset>

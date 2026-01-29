@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NothingToSay</title>
-    <link>https://example.org/en/algolia.json</link>
+    <link>https://umbravow.github.io/en/algolia.json</link>
     <description>Recent content from NothingToSay</description>
     <generator>Hugo</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Thu, 08 Jan 2026 01:00:00 +0800</lastBuildDate>
     
     
-    <atom:link href="https://example.org/en/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://umbravow.github.io/en/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>Hello world</title>
-      <link>https://example.org/en/post/helloworld/</link>
+      <link>https://umbravow.github.io/en/post/helloworld/</link>
       <pubDate>Thu, 08 Jan 2026 01:00:00 &#43;0800</pubDate>
       <author>Umbravow@gmail.com (Umbravow)</author>
-      <guid>https://example.org/en/post/helloworld/</guid>
+      <guid>https://umbravow.github.io/en/post/helloworld/</guid>
       <description>
         <![CDATA[<h1>Hello world</h1><p>Author: Umbravow(Umbravow@gmail.com)</p>
         
@@ -36,7 +36,7 @@
 <strong>Hello World</strong>
 </h1></blockquote>
         
-        <hr><p>Published on 2026-01-08 at <a href='https://example.org/'>NothingToSay</a>, last modified on 2026-01-08</p>]]>
+        <hr><p>Published on 2026-01-08 at <a href='https://umbravow.github.io/'>NothingToSay</a>, last modified on 2026-01-08</p>]]>
       </description>
       
     </item>
