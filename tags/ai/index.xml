@@ -12,12 +12,51 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Sun, 11 Jan 2026 00:29:03 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jan 2026 13:42:49 +0800</lastBuildDate>
     
     
     <atom:link href="https://umbravow.github.io/tags/ai/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>Openclaw</title>
+      <link>https://umbravow.github.io/post/2026-01-31-openclaw/</link>
+      <pubDate>Sat, 31 Jan 2026 13:42:49 &#43;0800</pubDate>
+      <author>Umbravow@gmail.com (Umbravow)</author>
+      <guid>https://umbravow.github.io/post/2026-01-31-openclaw/</guid>
+      <description>
+        <![CDATA[<h1>Openclaw</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
+        
+          <h4 id="安装升级到-openclaw">
+<a class="header-anchor" href="#%e5%ae%89%e8%a3%85%e5%8d%87%e7%ba%a7%e5%88%b0-openclaw"></a>
+安装/升级到 OpenClaw
+</h4><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -fsSL https://openclaw.bot/install.sh | bash -s -- --no-onboard
+</span></span></code></pre></div><h4 id="装完后确认">
+<a class="header-anchor" href="#%e8%a3%85%e5%ae%8c%e5%90%8e%e7%a1%ae%e8%ae%a4"></a>
+装完后确认：
+</h4><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">openclaw --version
+</span></span></code></pre></div><h4 id="命令找不到就修复下phat">
+<a class="header-anchor" href="#%e5%91%bd%e4%bb%a4%e6%89%be%e4%b8%8d%e5%88%b0%e5%b0%b1%e4%bf%ae%e5%a4%8d%e4%b8%8bphat"></a>
+命令找不到，就修复下PHAT
+</h4><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">echo</span> <span class="s1">&#39;export PATH=&#34;$(npm prefix -g)/bin:$PATH&#34;&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">~/.</span><span class="n">bashrc</span>
+</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">~/.</span><span class="n">bashrc</span>
+</span></span><span class="line"><span class="cl"><span class="nb">hash</span> <span class="o">-</span><span class="n">r</span>
+</span></span></code></pre></div><h4 id="配置设置">
+<a class="header-anchor" href="#%e9%85%8d%e7%bd%ae%e8%ae%be%e7%bd%ae"></a>
+配置设置：
+</h4><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">openclaw onboard --install-daemon
+</span></span></code></pre></div><blockquote>
+<p>参考上一篇国内用户本地部署clawdbot</p>
+        
+        <hr><p>本文2026-01-31首发于<a href='https://umbravow.github.io/'>NothingToSay</a>，最后修改于2026-01-31</p>]]>
+      </description>
+      
+        <category>AI</category>
+      
+    </item>
     
     
 

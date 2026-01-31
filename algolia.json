@@ -1,5 +1,11 @@
 [
   {
+    "objectID": "b34d6055068fa4463ef5b440f9eb90441911fd28",
+    "permalink": "/post/2026-01-31-openclaw/",
+    "title": "Openclaw","content": "\r安装/升级到 OpenClaw\rcurl -fsSL https://openclaw.bot/install.sh | bash -s -- --no-onboard 装完后确认：\ropenclaw --version 命令找不到，就修复下PHAT\recho \u0026#39;export PATH=\u0026#34;$(npm prefix -g)/bin:$PATH\u0026#34;\u0026#39; \u0026gt;\u0026gt; ~/.bashrc source ~/.bashrc hash -r 配置设置：\ropenclaw onboard --install-daemon 参考上一篇国内用户本地部署clawdbot\n启动/查看网关服务（装完 daemon 后）\rsystemctl --user enable --now openclaw-gateway.service systemctl --user status openclaw-gateway.service --no-pager openclaw gateway status 修复 Critical：credentials 目录权限\rchmod 700 /home/\u0026lt;用户名\u0026gt;/.openclaw/credentials openclaw security audit 访问后台，跟之前一样，先建立SSH隧道，然后直接在浏览器中输入http://127.0.0.1:18789/\r","date": "2026-01-31 13:42:49",
+    "updated": "2026-01-31 13:42:49"
+  }, 
+  {
     "objectID": "69bc90d83c534a7ad09c431da430229a937d40ec",
     "permalink": "/post/2026-01-29-clawdbot/",
     "title": "国内用户本地部署Clawdbot(Moltbot)","content": " 最近这个Clawdbot很火阿，让AI从被动的一问一答变成一个主动的agent了。其实之前一直有，Comet浏览器里就有个Assistant，不过它只能在浏览器里操作。 Clawdbot不一样了，调用各种软件主动提醒你，帮你处理日常事务、邮件、行程安排，不仅仅只是对话。这里就不过多介绍了。\n先说下我这边的环境：\r宿主机：Windows 11 虚拟机：ubuntu-24.04.3-live-server-amd64 网络：非纯外网，Win11上运行的v2rayN代理 纯外网的小伙伴就不用往下看了，直接用官方的一键脚本应该就可以了。\n说下什么是纯外网：就是你局域网内所有的机器和设备上面有个翻墙的网关，现在这种设备网上应该也有买的（就是翻墙信息直接写到路由器里的那种设备），不过大牌子的肯定没，管控严。一定是要有个这样的网关。就算你在自己电脑上挂了翻墙软件，再share给局域网的其他机器，这也不算。\n（ 为什么这里强调纯外网，因为如果不是的话，后面装Clawdbot会有很多问题。本文就是给你详细拆解下这些问题的 ）\n另外再说下，别对这个报有太大希望，希望越大装到后面失望越大。\n不是说这个东西不好用，GITHUB上2天从十几万星涨到80万不是吹的。用是真好用，但不适合国人。\n因为国外的软件生态环境跟国内不一样。从Clawdbot支持的软件列表里来看，国内的软件一个都没（包括模型，也仅仅只有一个qwen，deepseek都没）。不是它做不到，管的太严，没开放相应API。（营销号说的支持企业微信、飞书啊。企业微信它是支持，只支持hook。就是弄个机器人到点提醒你，你没法跟他对话，叫它干活。telegram不一样，它能。飞书没研究，不知道。没几个个人用户用飞书把？)\n最后开始之前再说几点：\r能用windows就用windwos，别用linux。折腾起来太麻烦了。纯外网除外。 非用linux，不建议用docker装。纯外网除外。 开始部署\r首先我这假设你网络都搞好了，能翻墙。\n我是宿主机用v2rayN，开了允许来至局域网的链接。虚拟机的网卡设置的桥接模式。 放2个图： 正式部署\r先下载，需要注意的是不要装到docker里，就直接部署在系统中。\ncurl -fsSL https://molt.bot/install.sh | bash 然后开始设置。\nclawdbot onboard …","date": "2026-01-29 23:30:41",

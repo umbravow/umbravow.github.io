@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI on NothingToSay</title>
-    <link>https://umbravow.github.io/categories/ai/</link>
+    <title>Moltbot on NothingToSay</title>
+    <link>https://umbravow.github.io/tags/moltbot/</link>
     <description>Recent content from NothingToSay</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sat, 31 Jan 2026 13:42:49 +0800</lastBuildDate>
     
     
-    <atom:link href="https://umbravow.github.io/categories/ai/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="https://umbravow.github.io/tags/moltbot/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -52,56 +52,6 @@
 <p>参考上一篇国内用户本地部署clawdbot</p>
         
         <hr><p>本文2026-01-31首发于<a href='https://umbravow.github.io/'>NothingToSay</a>，最后修改于2026-01-31</p>]]>
-      </description>
-      
-        <category>AI</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>国内用户本地部署Clawdbot(Moltbot)</title>
-      <link>https://umbravow.github.io/post/2026-01-29-clawdbot/</link>
-      <pubDate>Thu, 29 Jan 2026 23:30:41 &#43;0800</pubDate>
-      <author>Umbravow@gmail.com (Umbravow)</author>
-      <guid>https://umbravow.github.io/post/2026-01-29-clawdbot/</guid>
-      <description>
-        <![CDATA[<h1>国内用户本地部署Clawdbot(Moltbot)</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
-        
-          <blockquote>
-<p>最近这个Clawdbot很火阿，让AI从被动的一问一答变成一个主动的agent了。其实之前一直有，Comet浏览器里就有个Assistant，不过它只能在浏览器里操作。
-Clawdbot不一样了，调用各种软件主动提醒你，帮你处理日常事务、邮件、行程安排，不仅仅只是对话。这里就不过多介绍了。</p>
-        
-        <hr><p>本文2026-01-29首发于<a href='https://umbravow.github.io/'>NothingToSay</a>，最后修改于2026-01-29</p>]]>
-      </description>
-      
-        <category>AI</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>本地部署Ollama&#43;Qwen3vl-pro&#43;openwebui&#43;Modelfile</title>
-      <link>https://umbravow.github.io/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</link>
-      <pubDate>Sun, 11 Jan 2026 00:29:03 &#43;0800</pubDate>
-      <author>Umbravow@gmail.com (Umbravow)</author>
-      <guid>https://umbravow.github.io/post/2026-01-11-ollama-qwen3vl-pro-openwebui/ollama&#43;qwen3vl-pro&#43;openwebui/</guid>
-      <description>
-        <![CDATA[<h1>本地部署Ollama+Qwen3vl-pro+openwebui+Modelfile</h1><p>作者：Umbravow（Umbravow@gmail.com）</p>
-        
-          <h3 id="如何本地部署自己的ai模型消费级显卡并通过modelfile文件调试让本地ai模型更适合自己使用">
-<a class="header-anchor" href="#%e5%a6%82%e4%bd%95%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2%e8%87%aa%e5%b7%b1%e7%9a%84ai%e6%a8%a1%e5%9e%8b%e6%b6%88%e8%b4%b9%e7%ba%a7%e6%98%be%e5%8d%a1%e5%b9%b6%e9%80%9a%e8%bf%87modelfile%e6%96%87%e4%bb%b6%e8%b0%83%e8%af%95%e8%ae%a9%e6%9c%ac%e5%9c%b0ai%e6%a8%a1%e5%9e%8b%e6%9b%b4%e9%80%82%e5%90%88%e8%87%aa%e5%b7%b1%e4%bd%bf%e7%94%a8"></a>
-如何本地部署自己的AI模型(消费级显卡)，并通过Modelfile文件调试让本地AI模型更适合自己使用。
-</h3><hr>
-<h2 id="安装ollama">
-<a class="header-anchor" href="#%e5%ae%89%e8%a3%85ollama"></a>
-安装Ollama
-</h2><p>官网地址： <a href="https://ollama.com/">https://ollama.com/</a></p>
-<p>1,默认安装，安装完成后在设置里根据你电脑配置设置下面2个参数：</p>
-        
-        <hr><p>本文2026-01-11首发于<a href='https://umbravow.github.io/'>NothingToSay</a>，最后修改于2026-01-11</p>]]>
       </description>
       
         <category>AI</category>
